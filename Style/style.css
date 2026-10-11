@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  background-color: aliceblue;
+}
+h2 {
+  color: #111;
+  text-align: center;
+  margin-bottom: 12px;
+}
+h3 {
+  color: #eee;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+p {
+  color: #eee;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Navbar */
+nav {
+  background-color: #222;
+  opacity: 0.98;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.brand-name {
+  color: #eee;
+  text-decoration: none;
+}
+.brand-name span {
+  color: rgb(255, 174, 0);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.btn-nav {
+  display: inline-block;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.btn-nav:hover {
+  color: rgb(255, 174, 0);
+}
+
+main {
+  margin-top: -100px;
+}
+
+/* hero section */
+#hero {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(digital_agency.webp);
+  background-attachment: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 500px;
+  width: 100%;
+  /* isi konten nya */
+  text-align: center;
+  align-content: center;
+}
+#hero h2 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #eee;
+}
+.btn-hero:link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: chocolate;
+  color: white;
+  margin-top: 18px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: all 0.3 ease;
+  border: 2px solid chocolate;
+}
+.btn-hero:hover {
+  background-color: orange;
+  color: brown;
+  border-color: orange;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-hero:active {
+  background-color: orange;
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-hero:visited {
+  background-color: gray;
+  border-color: gray;
+  color: white;
+}
+
+/* About Section */
+.content {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+#about {
+  display: block;
+  justify-content: center;
+  padding: 50px;
+  /* margin-bottom: 30px; */
+}
+#about p {
+  color: #333;
+}
+
+/* Untuk kotak */
+.grid {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.container {
+  background-color: chocolate;
+  margin: 12px 8px;
+  padding: 15px 30px;
+  max-width: 250px;
+  border-radius: 10px;
+}
+.container:hover {
+  background-color: orange;
+  color: brown;
+  border-color: orange;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Section */
+#services {
+  display: block;
+  margin: 150px auto;
+}
+
+/* Article Section */
+#article {
+  display: block;
+  margin: 150px auto;
+}
+
+/* Form Section */
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+.contact-form input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+.btn-sub-res {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 250px;
+}
+.btn-sub-res button {
+  margin: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: chocolate;
+  color: #eee;
+  font-weight: 600;
+}
+
+.end-btn:hover {
+  color: rgb(231, 226, 222);
+  background-color: rgb(12, 177, 39);
+}
+
+/* footer */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333;
+  color: #eee;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.foot-container {
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
